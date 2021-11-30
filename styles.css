@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    padding-top: 3em;
+    font-weight: bold;
+    font-family: cursive;
+    color: white;
+}
+
+.gameContainer {
+    border-radius: .5rem;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+    background-image: url(kunal-shinde.jpg);
+    background-size: cover;
+}
+
+input {
+    display: block;
+    margin: 1em auto;
+    
+}
+
+#playerInput {
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em
+}
+
+#startButton,
+#restartButton,
+#playButton {
+    padding: .5rem 2rem;
+    border-radius: 0.5em;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: verdana, helvetica, 'Orbitron', sans-serif;
+    cursor: pointer;
+}
+
+/* seletions {
+    font-family: 'Caveat', cursive;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-family: 'Permanent Marker', cursive;
+
+    font-family: 'Press Start 2P', cursive;
+} */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khemmie's Game</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Orbitron:wght@400;800&family=Permanent+Marker&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="gameContainer">
+      <input
+        type="text"
+        name="playerInput"
+        id="playerInput"
+        placeholder="Enter Number"
+        min="1"
+        max="10" 
+        required
+      />
+      <input type="button" value="Start Game" id="startButton" />
+      <input type="button" value="Restart Game" id="restartButton" />
+      <input
+        type="button"
+        value="Play Hand"
+        id="playButton"
+        style="margin-top: 10px"
+      />
+      <div>
+        Player's Choice
+        <h3 id="playerChoice"></h3>
+      </div>
+      <div>
+        Computer's Choice
+        <h3 id="computerChoice"></h3>
+      </div>
+      <p>Player Hand : <span id="playerHand"> </span></p>
+      <p>Computer Hand : <span id="computerHand"></span></p>
+      <h2 id="winner"></h2>
+    </div>
+  </body>
+</html>
