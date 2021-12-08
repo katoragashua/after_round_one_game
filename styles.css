@@ -5,12 +5,11 @@
 html,
 body {
     margin: 0;
-    padding: 0;
-    font-size: 1em;
-    padding-top: 3em;
+    padding: 1em 0;
+    font-size: 1.1em;
     font-weight: bold;
     font-family: cursive;
-    color: white;
+    color: black;
 }
 
 .gameContainer {
@@ -20,7 +19,8 @@ body {
     margin: 0 auto;
     padding: 2em;
     text-align: center;
-    background-image: url(kunal-shinde.jpg);
+    background-image: url(ran-one.jpg);
+    min-height: 100vh;
     background-size: cover;
 }
 

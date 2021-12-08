@@ -30,7 +30,8 @@ function playGame() {
     reset();
     startBtn.style.display = 'none';     //Making the start button invisible
     restartBtn.style.display = "block"; //Making the restart button visible
-
+    handOfPlayer.style.display = "block";
+    handOfComputer.style.display = "block";
     makeChoice()
     playBtn.style.display = "block";
 //Comparing if player or computer wins
@@ -38,13 +39,17 @@ function playGame() {
         playerInput.value = " ";
         playHand();   
         if(playerHand + computerHand === playerChoice && playerChoice !== computerChoice) {  
-        winner.textContent = "Player Wins! 🎉🎉";
-    }else if (playerHand + computerHand === computerChoice && playerChoice !== computerChoice) {
-        winner.textContent = "Computer Wins! 🎉🎉";
-    }else {
-        winner.textContent = "Keep Playing!";
-    };
-    });
+            setTimeout(hidePlayerHand, 3000);
+            winner.textContent =  `Player Wins! 🎉🎉
+            Give computer dirty slap 😄`;
+        }else if (playerHand + computerHand === computerChoice && playerChoice !== computerChoice) {
+            setTimeout(hidePlayerHand, 3000);
+            winner.textContent = `Computer Wins! 🎉🎉
+            Give Player dirty slap 😄`;
+        }else {
+            winner.textContent = "Keep Playing!";
+        };
+        });
     restartBtn.addEventListener("click", reset);
 
 };
@@ -82,3 +87,7 @@ function makeChoice() {
     computerText.textContent = computerChoice;    //Printing the computerChoice
 }
 
+function hidePlayerHand() {
+    handOfPlayer.style.display = "none";
+    handOfComputer.style.display = "none";
+}
