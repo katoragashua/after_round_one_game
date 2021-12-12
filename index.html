@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khemmie's Game</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>After Round One Game</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Orbitron:wght@400;800&family=Permanent+Marker&family=Press+Start+2P&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Orbitron:wght@400;800&family=Permanent+Marker&family=Press+Start+2P&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <script src="index.js" defer></script>
@@ -20,7 +22,7 @@
         id="playerInput"
         placeholder="Enter Number"
         min="1"
-        max="10" 
+        max="10"
         required
       />
       <input type="button" value="Start Game" id="startButton" />
@@ -31,6 +33,7 @@
         id="playButton"
         style="margin-top: 10px"
       />
+      <button type=""></button>
       <div>
         Player's Choice
         <h3 id="playerChoice"></h3>
@@ -39,8 +42,10 @@
         Computer's Choice
         <h3 id="computerChoice"></h3>
       </div>
-      <p>Player Hand : <span id="playerHand"> </span></p>
-      <p>Computer Hand : <span id="computerHand"></span></p>
+      <div class="hands">
+        <p>Player Hand : <span id="playerHand"></span></p>
+        <p>Computer Hand : <span id="computerHand"></span></p>
+      </div>
       <h2 id="winner"></h2>
     </div>
   </body>

@@ -5,11 +5,11 @@
 html,
 body {
     margin: 0;
-    padding: 1em 0;
-    font-size: 1.1em;
+    padding-top: 1em;
+    font-size: 1em;
     font-weight: bold;
-    font-family: cursive;
-    color: black;
+    font-family: ubuntu;
+    color: white;
 }
 
 .gameContainer {
@@ -19,8 +19,9 @@ body {
     margin: 0 auto;
     padding: 2em;
     text-align: center;
-    background-image: url(ran-one.jpg);
-    min-height: 100vh;
+    background-image: url(ran-one.jpg), linear-gradient(to right, teal, orangered);
+    background-blend-mode:multiply;
+    min-height: 90vh;
     background-size: cover;
 }
 
@@ -32,19 +33,20 @@ input {
 
 #playerInput {
     border: none;
-    border-radius: 0.5em;
-    padding: 0.5em
+    border-radius: 4px;
+    padding: 0.5em;
 }
 
 #startButton,
 #restartButton,
 #playButton {
     padding: .5rem 2rem;
-    border-radius: 0.5em;
+    border-radius: 4px;
     border: none;
     font-size: 1rem;
     font-weight: bold;
-    font-family: verdana, helvetica, 'Orbitron', sans-serif;
+    font-family: ubuntu, helvetica, 'Orbitron', sans-serif;
+    font-style: italic;
     cursor: pointer;
 }
 

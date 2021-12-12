@@ -14,6 +14,7 @@ const handOfPlayer = document.getElementById("playerHand");       //For playerHa
 const handOfComputer = document.getElementById("computerHand");  //For computerHand textContent
 const computerText = document.getElementById("computerChoice"); //For computerChoice textContent
 const playerText = document.getElementById("playerChoice");    //For playerChoice textContent
+const handsText = document.querySelector(".hands");           //For hands textContent
 
 startBtn.addEventListener("click", playGame);
 
@@ -41,11 +42,11 @@ function playGame() {
         if(playerHand + computerHand === playerChoice && playerChoice !== computerChoice) {  
             setTimeout(hidePlayerHand, 3000);
             winner.textContent =  `Player Wins! 🎉🎉
-            Give computer dirty slap 😄`;
+            Give the computer dirty slap 😄`;
         }else if (playerHand + computerHand === computerChoice && playerChoice !== computerChoice) {
-            setTimeout(hidePlayerHand, 3000);
+            setTimeout(hidePlayerHand, 4000);
             winner.textContent = `Computer Wins! 🎉🎉
-            Give Player dirty slap 😄`;
+            Give the Player dirty slap 😄`;
         }else {
             winner.textContent = "Keep Playing!";
         };
@@ -69,6 +70,7 @@ function reset() {
     computerText.textContent = " ";
     winner.textContent = " ";
     gameArray = [1,2,3,4,5,6,7,8,9,10]; //Reset game array
+    handsText.style.display = "block";
 }
 
 //Function to ensure player and computer do not make the same choice
@@ -88,6 +90,5 @@ function makeChoice() {
 }
 
 function hidePlayerHand() {
-    handOfPlayer.style.display = "none";
-    handOfComputer.style.display = "none";
+    handsText.style.display = "none";
 }
